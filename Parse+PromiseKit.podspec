@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'Parse+PromiseKit'
-  s.version     = '0.9.2'
+  s.version     = '0.9.2.1'
   s.source      = { :git => 'https://github.com/hathway/Parse-PromiseKit.git', :tag => 'v' + s.version.to_s }
   s.summary     = 'A PromiseKit category for the Parse SDK.'
 
@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
 
     cs.dependency 'Parse+PromiseKit/Base'
     cs.ios.dependency 'Parse', '~> 1.3'
+    cs.ios.dependency 'ParseUI', '~> 1.0'
     cs.osx.dependency 'Parse-OSX', '~> 1.3'
 
     cs.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Parse"' }
